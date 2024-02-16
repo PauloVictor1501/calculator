@@ -14,18 +14,18 @@
     <div class="calculator">
       <input type="text" id="display" readonly="">
       <div class="tollbar">
-        <button class="toolbarIco">a</button>
+        <button id="a" class="toolbarIco" onclick="mostrarHistorico()">a</button>
         <button class="toolbarIco">b</button>
         <button class="toolbarIco">c</button>
         <button class="space"></button>
         <button class="space"></button>
-        <button class="toolbarIco" id="del">⇤</button>
+        <button class="toolbarIco" id="del" onclick="deleteLastTerm()">⇤</button>
       </div>
       <div>
         <hr class="linha">
       </div>
       <div class="buttons">
-        <button id="clear" onmousedown="holdClick()">C</button>
+        <button id="clear" onmousedown="clearDisplay()">C</button>
         <button class="operator" onclick="addParentheses()">( )</button>
         <button class="operator" onclick="perCent()">%</button>
         <button id="divisao" class="operator" onclick="appendOperator('/')">÷</button>
@@ -45,10 +45,10 @@
         <button onclick="appendNumber('0')">0</button>
         <button onclick="appendNumber('.')">,</button>
         <button id="equals" onclick="calculateResult()">=</button>
+        <div class="historico">
+            <button id=clearHist onclick="clearHist()"> Limpar histórico</button>
+        </div>
       </div>
     </div>
-
-
   </body>
-
 </html>
