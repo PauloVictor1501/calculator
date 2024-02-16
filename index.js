@@ -123,12 +123,18 @@ function changesimb(){
 const historico = document.querySelector('.historico')
 var a = document.getElementById('a')
 function mostrarHistorico(){
-    if(historico.style.visibility == "hidden"){
-    historico.style.visibility = "visible"
-    a.innerText = "x"
-    }else{
+    const historico = document.querySelector('.historico')
+historico.style.visibility == "hidden"
+var a = document.getElementById('a')
+function mostrarHistorico(){
+    if(historico.style.visibility == "visible"){
         historico.style.visibility = "hidden"
         a.innerText = "a"
+    }else{
+        historico.style.visibility = "visible"
+        a.innerText = "x"
+    }   
+}
     }   
 }
 //Fim mostrar histórico
