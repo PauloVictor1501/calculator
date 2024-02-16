@@ -8,19 +8,16 @@
     <title>Calculadora</title>
     <script type="text/javascript" src="./index.js" defer=""></script>
     <link rel="stylesheet" href="./index.css">
+    <link rel="shortcut icon" href="src/favicon.png" type="image/x-icon">
   </head>
 
   <body>
     <div class="calculator">
       <input type="text" id="display" readonly="">
       <div class="tollbar">
-<<<<<<< HEAD
-        <button id="a" class="toolbarIco" onclick="mostrarHistorico()">h</button>
-=======
-        <button id="a" class="toolbarIco" onclick="mostrarHistorico()">a</button>
->>>>>>> 63c43c486bc3ce17a80bc6900abbfb832fb0ebc2
-        <button class="toolbarIco">b</button>
-        <button class="toolbarIco">c</button>
+        <button id="a" class="toolbarIco" onclick="mostrarHistorico()"><img id="clock" src="src/clock.webp"git fetch"?" alt="h"></button>
+        <button class="space"></button>
+        <button class="space"></button>
         <button class="space"></button>
         <button class="space"></button>
         <button class="toolbarIco" id="del" onclick="deleteLastTerm()">⇤</button>
@@ -29,7 +26,7 @@
         <hr class="linha">
       </div>
       <div class="buttons">
-        <button id="clear" onmousedown="clearDisplay()">C</button>
+        <button id="clear" onmousedown="clearDisplay()">c</button>
         <button class="operator" onclick="addParentheses()">( )</button>
         <button class="operator" onclick="perCent()">%</button>
         <button id="divisao" class="operator" onclick="appendOperator('/')">÷</button>

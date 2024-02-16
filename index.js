@@ -126,10 +126,11 @@ var a = document.getElementById('a')
 function mostrarHistorico(){
     if(historico.style.visibility == "visible"){
         historico.style.visibility = "hidden"
-        a.innerText = "h"
+        a.innerHTML = '<img id="clock" src="src/clock.webp"git fetch"?" alt="h">'
     }else{
         historico.style.visibility = "visible"
-        a.innerText = "x"
+        a.innerHTML = '<img id="calc" src="src/calc.webp"git fetch"?" alt="x">'
     }   
 }
 //Fim mostrar histórico
+
