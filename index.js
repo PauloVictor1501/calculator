@@ -76,13 +76,27 @@ function addParentheses() {
 
 
 //Cálculo do resultado
+
 function calculateResult(){
   const display = document.querySelector('#display').value
   const result = eval(display)
   document.querySelector('#display').value = result
+  function adicionarHistorico(){
+    var hist = document.querySelector('.historico')
+    hist.innerHTML += `<p id="expr">${display}</p> <p id="result"> =${result}</p>`
+  }
+  adicionarHistorico()
 }
 //Fim cálculo do resultado
 
+//Limpar histórico
+function clearHist(){
+    const hist = document.querySelector('.historico')
+    hist.innerHTML = ""
+}
+
+
+//Fim limpar histórico
 
 
 //Adicionar %
@@ -104,3 +118,18 @@ function changesimb(){
   document.querySelector('#display').value = result 
 }
 //Fim trocar sinal
+
+//Mostrar histórico
+const historico = document.querySelector('.historico')
+historico.style.visibility == "hidden"
+var a = document.getElementById('a')
+function mostrarHistorico(){
+    if(historico.style.visibility == "visible"){
+        historico.style.visibility = "hidden"
+        a.innerText = "h"
+    }else{
+        historico.style.visibility = "visible"
+        a.innerText = "x"
+    }   
+}
+//Fim mostrar histórico
