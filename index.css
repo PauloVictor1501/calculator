@@ -129,7 +129,7 @@ button:active {
     overflow: hidden;
     left: 0%;
     top: 38%;
-    opacity: hidden;
+    visibility: hidden;
     transition: ease-in-out 0.1s;
     text-align: right;   
 
