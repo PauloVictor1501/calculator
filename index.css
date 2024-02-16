@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #949494;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.calculator {
+    width: 337px;
+    margin: 50px auto;
+    padding: 25px;
+    background-color: #000000;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#display {
+    width: calc(100% - 20px);
+    height: 150px;
+    padding: 10px;
+    font-size: 28px;
+    margin-bottom: 25px;
+    border: none;
+    border-radius: 10px;
+    border-color: #303030;
+    background-color: #000000;
+    color: #fff;
+    text-align: right;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    padding-top: 30px;
+}
+
+button {
+    padding: 10px;
+    font-size: 30px;
+    cursor: pointer;
+    border: none;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background-color: #141414;
+    color: #fff;
+}
+
+button:hover {
+    background-color: #424242;
+}
+
+button:active {
+    background-color: #212121;
+}
+
+.operator {
+  color: rgb(52, 184, 0)
+}
+
+#equals{
+  background-color: green;
+}
+
+#clear{
+  color: rgb(248, 78, 78);
+}
+
+#divisao{
+  font-size: 46px;
+}
+
+#del{
+  margin-left: 5%;
+  color: rgb(52, 184, 0);
+}
+.toolbarIco{
+  font-size: 21px;
+  object-position: center;
+  text-align: center;
+  padding: 0px;
+  color: rgb(185, 185, 185);
+  background-color: rgb(0, 0, 0);
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+
+.tollbar{
+  background-color: rgb(0, 0, 0);
+  padding-bottom: 0px;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 0px;
+  margin-left: 7%;
+  padding-bottom: 10px;
+}
+.linha{
+  border: 1pt solid rgb(80, 80, 80);
+  width: 100%;
+
+}
+.space{
+  background-color: #000000;
+  width: 25px;
+  height: 25px;
+}
