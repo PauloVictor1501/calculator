@@ -121,9 +121,6 @@ function changesimb(){
 
 //Mostrar histórico
 const historico = document.querySelector('.historico')
-var a = document.getElementById('a')
-function mostrarHistorico(){
-    const historico = document.querySelector('.historico')
 historico.style.visibility == "hidden"
 var a = document.getElementById('a')
 function mostrarHistorico(){
