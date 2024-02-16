@@ -135,6 +135,4 @@ function mostrarHistorico(){
         a.innerText = "x"
     }   
 }
-    }   
-}
 //Fim mostrar histórico
