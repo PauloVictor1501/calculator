@@ -199,5 +199,5 @@ button:active {
   background-color: black;
 }
 .space:active{
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0);
 }
