@@ -121,15 +121,16 @@ function changesimb(){
 
 //Mostrar histórico
 const historico = document.querySelector('.historico')
-historico.style.visibility == "hidden"
+historico.style.visibility = "hidden"
 var a = document.getElementById('a')
+console.log (historico.style.visibility)
 function mostrarHistorico(){
-    if(historico.style.visibility == "visible"){
-        historico.style.visibility = "hidden"
-        a.innerHTML = '<img id="clock" src="src/clock.webp"git fetch"?" alt="h">'
-    }else{
+    if(historico.style.visibility == "hidden"){
         historico.style.visibility = "visible"
         a.innerHTML = '<img id="calc" src="src/calc.webp"git fetch"?" alt="x">'
+    }else{
+        historico.style.visibility = "hidden"
+        a.innerHTML = '<img id="clock" src="src/clock.webp"git fetch"?" alt="h">'
     }   
 }
 //Fim mostrar histórico
